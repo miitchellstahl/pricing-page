@@ -15,6 +15,7 @@
 }
 
 body {
+    padding: 2rem 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -35,6 +36,14 @@ body {
     width: 450px;
     background-color: #FFF;
     border-radius: 25px;
+}
+
+.img-container {
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    height: 220px;
+    width: 100%;
+    background-image: url(images/illustration-hero.svg);
 }
 
 .main-content {
@@ -128,4 +137,23 @@ button:hover {
 .change:hover {
     text-decoration: none;
     color: var(--desatBlue);
+}
+
+@media only screen and (max-width: 450px) {
+    body {
+        height: 100%;
+        width: 100%;
+    }
+
+    .container {
+        width: 350px;
+    }
+
+    .main-content {
+        padding: 30px;
+    }
+
+    .vertical {
+        margin-right: 30px;
+    }
 }
